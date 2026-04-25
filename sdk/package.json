@@ -1,0 +1,22 @@
+{
+  "name": "@perfsense/sdk",
+  "version": "1.0.0",
+  "description": "Lightweight React SDK for collecting Core Web Vitals and reporting to PerfSense",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "jest --passWithNoTests"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["react", "performance", "web-vitals", "monitoring"],
+  "license": "MIT"
+}

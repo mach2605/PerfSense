@@ -1,5 +1,31 @@
-node_modules/ 
-__pycache__/ 
-*.pyc 
-data/repos/ 
-.env 
+# Cloned source repositories (large — regenerate with scripts/data-collection/)
+data/repos/
+
+# Node dependencies
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+
+
+# Environment secrets (project-level .env files only — not data/repos/)
+.env
+.env.local
+.env.production

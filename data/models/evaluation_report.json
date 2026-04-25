@@ -1,0 +1,263 @@
+{
+  "dataset": {
+    "total_commits": 960,
+    "regression_count": 141,
+    "regression_rate": 0.1469,
+    "feature_count": 25,
+    "features_used": [
+      "files_changed",
+      "files_in_components",
+      "lines_added",
+      "lines_deleted",
+      "net_lines",
+      "large_commit",
+      "package_json_changed",
+      "complexity_delta",
+      "useEffect_added",
+      "useState_added",
+      "useCallback_added",
+      "useMemo_added",
+      "useContext_added",
+      "useReducer_added",
+      "memo_added",
+      "lazy_added",
+      "inline_arrow_functions",
+      "console_log_added",
+      "import_count_delta",
+      "nested_components",
+      "deployment_frequency",
+      "bundle_size_delta",
+      "component_count_delta",
+      "hook_density",
+      "optimization_ratio"
+    ]
+  },
+  "split": {
+    "train": 672,
+    "val": 96,
+    "test": 192,
+    "train_regression_rate": 0.1458,
+    "test_regression_rate": 0.1562
+  },
+  "best_xgb_params": {
+    "n_estimators": 200,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "validation_metrics": {
+    "logistic_regression": {
+      "model": "Logistic Regression",
+      "accuracy": 0.9792,
+      "precision": 0.8667,
+      "recall": 1.0,
+      "f1": 0.9286,
+      "roc_auc": 0.9954,
+      "support_pos": 13,
+      "support_neg": 83
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "accuracy": 0.9688,
+      "precision": 0.8125,
+      "recall": 1.0,
+      "f1": 0.8966,
+      "roc_auc": 0.9963,
+      "support_pos": 13,
+      "support_neg": 83
+    },
+    "xgboost": {
+      "model": "XGBoost",
+      "accuracy": 0.9792,
+      "precision": 0.8667,
+      "recall": 1.0,
+      "f1": 0.9286,
+      "roc_auc": 0.9981,
+      "support_pos": 13,
+      "support_neg": 83
+    }
+  },
+  "test_metrics": {
+    "logistic_regression": {
+      "model": "Logistic Regression",
+      "accuracy": 0.9635,
+      "precision": 0.8966,
+      "recall": 0.8667,
+      "f1": 0.8814,
+      "roc_auc": 0.973,
+      "support_pos": 30,
+      "support_neg": 162
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "accuracy": 0.9688,
+      "precision": 0.875,
+      "recall": 0.9333,
+      "f1": 0.9032,
+      "roc_auc": 0.9858,
+      "support_pos": 30,
+      "support_neg": 162
+    },
+    "xgboost": {
+      "model": "XGBoost",
+      "accuracy": 0.974,
+      "precision": 0.9032,
+      "recall": 0.9333,
+      "f1": 0.918,
+      "roc_auc": 0.9883,
+      "support_pos": 30,
+      "support_neg": 162
+    }
+  },
+  "cross_repo_validation": [
+    {
+      "repo": "ant-design-pro",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "repo": "discourse",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "repo": "excalidraw",
+      "accuracy": 0.975,
+      "precision": 0.963,
+      "recall": 0.9286,
+      "f1": 0.9455,
+      "roc_auc": 0.9965
+    },
+    {
+      "repo": "grafana",
+      "accuracy": 0.9667,
+      "precision": 0.8571,
+      "recall": 1.0,
+      "f1": 0.9231,
+      "roc_auc": 0.9987
+    },
+    {
+      "repo": "joplin",
+      "accuracy": 0.9833,
+      "precision": 0.8333,
+      "recall": 0.8333,
+      "f1": 0.8333,
+      "roc_auc": 0.9942
+    },
+    {
+      "repo": "metabase",
+      "accuracy": 0.9583,
+      "precision": 0.9167,
+      "recall": 0.88,
+      "f1": 0.898,
+      "roc_auc": 0.9891
+    },
+    {
+      "repo": "react-admin",
+      "accuracy": 0.9917,
+      "precision": 0.8571,
+      "recall": 1.0,
+      "f1": 0.9231,
+      "roc_auc": 1.0
+    },
+    {
+      "repo": "strapi",
+      "accuracy": 0.9833,
+      "precision": 0.9459,
+      "recall": 1.0,
+      "f1": 0.9722,
+      "roc_auc": 0.999
+    }
+  ],
+  "feature_importance_top10": [
+    {
+      "feature": "lines_added",
+      "importance": 0.350727
+    },
+    {
+      "feature": "large_commit",
+      "importance": 0.341275
+    },
+    {
+      "feature": "useEffect_added",
+      "importance": 0.0523
+    },
+    {
+      "feature": "complexity_delta",
+      "importance": 0.034919
+    },
+    {
+      "feature": "console_log_added",
+      "importance": 0.025913
+    },
+    {
+      "feature": "inline_arrow_functions",
+      "importance": 0.024352
+    },
+    {
+      "feature": "lines_deleted",
+      "importance": 0.023552
+    },
+    {
+      "feature": "nested_components",
+      "importance": 0.021908
+    },
+    {
+      "feature": "hook_density",
+      "importance": 0.014957
+    },
+    {
+      "feature": "optimization_ratio",
+      "importance": 0.01442
+    }
+  ],
+  "shap_top10": [
+    {
+      "feature": "lines_added",
+      "mean_shap": 3.212632
+    },
+    {
+      "feature": "large_commit",
+      "mean_shap": 2.321124
+    },
+    {
+      "feature": "complexity_delta",
+      "mean_shap": 1.279138
+    },
+    {
+      "feature": "useEffect_added",
+      "mean_shap": 0.52196
+    },
+    {
+      "feature": "nested_components",
+      "mean_shap": 0.378668
+    },
+    {
+      "feature": "optimization_ratio",
+      "mean_shap": 0.35505
+    },
+    {
+      "feature": "files_changed",
+      "mean_shap": 0.328898
+    },
+    {
+      "feature": "files_in_components",
+      "mean_shap": 0.297678
+    },
+    {
+      "feature": "console_log_added",
+      "mean_shap": 0.217141
+    },
+    {
+      "feature": "net_lines",
+      "mean_shap": 0.20063
+    }
+  ]
+}

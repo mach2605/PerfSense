@@ -1,0 +1,168 @@
+{
+  "repo": "excalidraw",
+  "n_commits": 10,
+  "regression_threshold": 0.2,
+  "scored_at": "2026-04-11T14:11:52.935004",
+  "commits": [
+    {
+      "hash": "d9e8a33a",
+      "subject": "feat: implement overlap box selection",
+      "lh": {
+        "performance_score": 54.0,
+        "lcp_ms": 21700,
+        "tbt_ms": 137,
+        "cls": 0.016,
+        "fcp_ms": 19800,
+        "tti_ms": 23700,
+        "speed_index_ms": 19800
+      },
+      "build_ok": true,
+      "lh_regression": 0,
+      "score_delta_pct": 0.0
+    },
+    {
+      "hash": "4a5c9e99",
+      "subject": "fix: font picker font names not quoted",
+      "lh": {
+        "performance_score": 54.0,
+        "lcp_ms": 22500,
+        "tbt_ms": 148,
+        "cls": 0.0,
+        "fcp_ms": 20000,
+        "tti_ms": 24000,
+        "speed_index_ms": 20000
+      },
+      "build_ok": true,
+      "score_delta_pct": 0.0,
+      "lh_regression": 0
+    },
+    {
+      "hash": "c09e170b",
+      "subject": "feat: deselect on esc",
+      "lh": {
+        "performance_score": 55.0,
+        "lcp_ms": 21900,
+        "tbt_ms": 66,
+        "cls": 0.0,
+        "fcp_ms": 19500,
+        "tti_ms": 23000,
+        "speed_index_ms": 19500
+      },
+      "build_ok": true,
+      "score_delta_pct": 1.85,
+      "lh_regression": 0
+    },
+    {
+      "hash": "1c292e49",
+      "subject": "fix(math): validate second point in isLineSegment",
+      "lh": {
+        "performance_score": 55.0,
+        "lcp_ms": 22600,
+        "tbt_ms": 61,
+        "cls": 0.0,
+        "fcp_ms": 20100,
+        "tti_ms": 23800,
+        "speed_index_ms": 20100
+      },
+      "build_ok": true,
+      "score_delta_pct": 0.0,
+      "lh_regression": 0
+    },
+    {
+      "hash": "d6f0f34f",
+      "subject": "fix: Rotated rounded arrow center point",
+      "lh": {
+        "performance_score": 54.0,
+        "lcp_ms": 22200,
+        "tbt_ms": 132,
+        "cls": 0.0,
+        "fcp_ms": 19700,
+        "tti_ms": 23500,
+        "speed_index_ms": 19700
+      },
+      "build_ok": true,
+      "score_delta_pct": -1.82,
+      "lh_regression": 0
+    },
+    {
+      "hash": "75789f62",
+      "subject": "fix: Other endpoint not updated on midpoint snap",
+      "lh": {
+        "performance_score": 51.0,
+        "lcp_ms": 22700,
+        "tbt_ms": 211,
+        "cls": 0.0,
+        "fcp_ms": 20500,
+        "tti_ms": 24500,
+        "speed_index_ms": 20500
+      },
+      "build_ok": true,
+      "score_delta_pct": -5.56,
+      "lh_regression": 0
+    },
+    {
+      "hash": "987173b5",
+      "subject": "fix: Arrow point index Out-of-Bounds",
+      "lh": {
+        "performance_score": 54.0,
+        "lcp_ms": 22100,
+        "tbt_ms": 116,
+        "cls": 0.0,
+        "fcp_ms": 19900,
+        "tti_ms": 23600,
+        "speed_index_ms": 19900
+      },
+      "build_ok": true,
+      "score_delta_pct": 5.88,
+      "lh_regression": 0
+    },
+    {
+      "hash": "81ab857a",
+      "subject": "feat: various text related improvements",
+      "lh": {
+        "performance_score": 55.0,
+        "lcp_ms": 21800,
+        "tbt_ms": 60,
+        "cls": 0.0,
+        "fcp_ms": 19400,
+        "tti_ms": 22900,
+        "speed_index_ms": 19400
+      },
+      "build_ok": true,
+      "score_delta_pct": 1.85,
+      "lh_regression": 0
+    },
+    {
+      "hash": "e8b4620a",
+      "subject": "feat: put caret at pointer coords on text click",
+      "lh": {
+        "performance_score": 54.0,
+        "lcp_ms": 22000,
+        "tbt_ms": 113,
+        "cls": 0.0,
+        "fcp_ms": 19600,
+        "tti_ms": 23400,
+        "speed_index_ms": 19600
+      },
+      "build_ok": true,
+      "score_delta_pct": -1.82,
+      "lh_regression": 0
+    },
+    {
+      "hash": "2b0e4c96",
+      "subject": "fix: remove leftover debug code path",
+      "lh": {
+        "performance_score": 51.0,
+        "lcp_ms": 22407.481000000003,
+        "tbt_ms": 217,
+        "cls": 0,
+        "fcp_ms": 18999.213500000005,
+        "tti_ms": 23075.450000000004,
+        "speed_index_ms": 18999.213500000005
+      },
+      "build_ok": true,
+      "score_delta_pct": -5.56,
+      "lh_regression": 0
+    }
+  ]
+}

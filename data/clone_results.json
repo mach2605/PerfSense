@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-04-07T22:32:44.364566",
+  "duration_seconds": 263.416377,
+  "results": {
+    "joplin": true,
+    "excalidraw": true,
+    "react-admin": true,
+    "strapi": true,
+    "grafana": false,
+    "ant-design-pro": true,
+    "metabase": false,
+    "discourse": true
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "run_at": "2026-04-11T16:39:27.121651",
+  "backend": "http://localhost:3001",
+  "case_studies": [
+    {
+      "case_study_id": "CS1",
+      "case_study_name": "Task Manager",
+      "repo": "task-manager-app",
+      "commit_hash": "cs1-regression",
+      "diff_lines_added": 69,
+      "diff_lines_removed": 37,
+      "is_regression": 1,
+      "regression_probability": 0.5883,
+      "risk_level": "medium",
+      "expected_risk": "high",
+      "prediction_correct": true,
+      "shap_top5": [
+        {
+          "feature": "lines_added",
+          "shap_value": -2.757
+        },
+        {
+          "feature": "useEffect_added",
+          "shap_value": 2.546
+        },
+        {
+          "feature": "complexity_delta",
+          "shap_value": -1.5303
+        },
+        {
+          "feature": "large_commit",
+          "shap_value": -1.5013
+        },
+        {
+          "feature": "nested_components",
+          "shap_value": 1.4252
+        }
+      ],
+      "key_features": {
+        "lines_added": 69,
+        "large_commit": 0,
+        "useEffect_added": 2,
+        "useState_added": 4,
+        "useCallback_added": 0,
+        "memo_added": 0,
+        "nested_components": 2,
+        "inline_arrow_functions": 9,
+        "console_log_added": 4,
+        "import_count_delta": 0,
+        "package_json_changed": 0,
+        "complexity_delta": 2,
+        "optimization_ratio": 0
+      },
+      "anti_patterns": [
+        "useEffect without dependency array (runs every render)",
+        "Nested component definitions (TaskItem, TaskBadge inside parent)",
+        "Removed React.memo, useCallback, useMemo",
+        "8+ inline arrow functions in JSX event handlers",
+        "4 console.log debug statements"
+      ],
+      "request_id": "ff1e8d75-6a82-4dc8-bedc-745a34ea276a",
+      "predicted_at": "2026-04-11T16:39:27.040353"
+    },
+    {
+      "case_study_id": "CS2",
+      "case_study_name": "Product Catalog",
+      "repo": "ecommerce-app",
+      "commit_hash": "cs2-regression",
+      "diff_lines_added": 152,
+      "diff_lines_removed": 41,
+      "is_regression": 1,
+      "regression_probability": 0.8179,
+      "risk_level": "high",
+      "expected_risk": "high",
+      "prediction_correct": true,
+      "shap_top5": [
+        {
+          "feature": "large_commit",
+          "shap_value": -1.927
+        },
+        {
+          "feature": "nested_components",
+          "shap_value": 1.8182
+        },
+        {
+          "feature": "complexity_delta",
+          "shap_value": -1.407
+        },
+        {
+          "feature": "useEffect_added",
+          "shap_value": 1.3396
+        },
+        {
+          "feature": "console_log_added",
+          "shap_value": 0.7052
+        }
+      ],
+      "key_features": {
+        "lines_added": 152,
+        "large_commit": 0,
+        "useEffect_added": 5,
+        "useState_added": 6,
+        "useCallback_added": 0,
+        "memo_added": 0,
+        "nested_components": 2,
+        "inline_arrow_functions": 13,
+        "console_log_added": 8,
+        "import_count_delta": 5,
+        "package_json_changed": 0,
+        "complexity_delta": 2,
+        "optimization_ratio": 0
+      },
+      "anti_patterns": [
+        "5 heavy dependencies imported (lodash, moment, numeral, chart.js, xlsx)",
+        "Large commit: 200+ lines added",
+        "5 unguarded useEffects (no dependency arrays)",
+        "Nested ProductCard and StatsBar components",
+        "10+ useState hooks (should use useReducer)",
+        "Inline arrow functions for all event handlers",
+        "5 console.log debug statements"
+      ],
+      "request_id": "25c59d4f-f91f-42e1-8961-24fe55c9acb6",
+      "predicted_at": "2026-04-11T16:39:27.074624"
+    },
+    {
+      "case_study_id": "CS3",
+      "case_study_name": "Analytics Widget",
+      "repo": "analytics-dashboard",
+      "commit_hash": "cs3-regression",
+      "diff_lines_added": 153,
+      "diff_lines_removed": 49,
+      "is_regression": 1,
+      "regression_probability": 0.9893,
+      "risk_level": "high",
+      "expected_risk": "high",
+      "prediction_correct": true,
+      "shap_top5": [
+        {
+          "feature": "complexity_delta",
+          "shap_value": 1.5701
+        },
+        {
+          "feature": "large_commit",
+          "shap_value": -1.5411
+        },
+        {
+          "feature": "useEffect_added",
+          "shap_value": 1.3526
+        },
+        {
+          "feature": "nested_components",
+          "shap_value": 1.2224
+        },
+        {
+          "feature": "console_log_added",
+          "shap_value": 0.8466
+        }
+      ],
+      "key_features": {
+        "lines_added": 153,
+        "large_commit": 0,
+        "useEffect_added": 3,
+        "useState_added": 9,
+        "useCallback_added": 0,
+        "memo_added": 0,
+        "nested_components": 2,
+        "inline_arrow_functions": 15,
+        "console_log_added": 11,
+        "import_count_delta": 0,
+        "package_json_changed": 0,
+        "complexity_delta": 12,
+        "optimization_ratio": 0
+      },
+      "anti_patterns": [
+        "High complexity delta: for loops, if/else chains, inline calculations",
+        "11 useState hooks (no consolidation with useReducer)",
+        "3 unguarded useEffects (run on every render)",
+        "Nested ChartBar and StatsRow components",
+        "Removed all useMemo, useCallback, React.memo",
+        "Inline calculations not memoized (total, average, trend on every render)",
+        "6 console.log debug statements"
+      ],
+      "request_id": "cba36e18-f62d-412c-b865-279de3e57147",
+      "predicted_at": "2026-04-11T16:39:27.108419"
+    }
+  ]
+}
